@@ -1,0 +1,75 @@
+/* Media Query - Index - Rodapé */
+
+/* Laptop 1024px */
+@media (max-width: 1024px) {
+    .copyright {
+        padding: 1.8em 0 1em 1.2em;
+    }
+}
+
+
+/* Tablet 768px */
+@media (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-logos {
+        position: relative;
+        margin: 1em 0 0 20em;
+    }
+
+    .logo-wave {
+        width: 15%;
+    }
+    
+    .logo-taskme {
+        width: 17%;
+    }
+    
+    .copyright {
+        width: 75%;
+        padding: .2em 0 .2em 0;
+    }
+
+    .copyright-texto {
+        font-size: .7em;
+    }
+}
+
+/* Mobile L - 425px */
+@media (max-width: 425px) {
+    .footer-logos {
+        
+        margin: 1em 0 0 8.4em;
+    }
+
+    .logo-wave {
+        width: 25%;
+    }
+    
+    .logo-taskme {
+        width: 27%;
+    }
+}
+
+/* Mobile M - 375px */
+@media (max-width: 375px) {
+}
+
+/* Mobile S - 320px */
+@media (max-width: 320px) {
+    .footer-logos {
+        margin: 1em 0 0 6.4em;
+    }
+
+    .logo-wave {
+        width: 30%;
+    }
+    
+    .logo-taskme {
+        width: 32%;
+    }
+}
