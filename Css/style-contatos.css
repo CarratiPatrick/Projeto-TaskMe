@@ -1,0 +1,9 @@
+.estiloCard{
+    max-width: 18rem;
+}
+.estiloGrid{
+    row-gap: 0;
+}
+form {
+    background-color: #fffffe;
+}
