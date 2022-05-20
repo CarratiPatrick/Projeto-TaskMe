@@ -4,6 +4,10 @@
 .estiloGrid{
     row-gap: 0;
 }
-form {
-    background-color: #fffffe;
+
+.corBtn{
+   background-color:  #232946;
+}
+.corTxt{
+    color: #fffffe ;
 }
