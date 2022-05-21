@@ -27,17 +27,58 @@ h5 {
  
 /* Seção 2 - Resumo */
 .resumo-taskme {
-    margin: 3em auto;
-    border: 3px white solid;
-    width: 8%;
-    border-radius: 12px;
+    width: 60%;
+    margin-bottom: 2em;
 }
 
 .texto-resumo {
     font-family: 'Mulish', sans-serif;
-    width: 60%;
-    margin: auto;
     text-align: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
+}
+
+.resumo-botao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 3em;
+    margin-top: 2em;
+}
+
+.botao-cadastre {
+    border: 2px #b8cfec solid;
+    padding: 3px 16px;
+    background-color: #b8cfec;
+    color: #232946;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: none;
+    font-size: 1.4em;
+    border-radius: .7em;
+}
+
+.botao-cadastre:hover {
+    color: #b8cfec;
+    background-color: #232946;
+}
+
+.botao-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: end
+}
+
+.imagem-main {
+    width: 30%;
+    margin-left: 3em;
+}
+
+.sencudária {
+    margin: 6em 0 2em 5em;
+    display: flex;
+}
+
+.google-play{
+    width: 40%;
+    margin-left: 3em;
 }
