@@ -43,15 +43,19 @@
   <!-- Formulário -->
   <div class="container">
     <div class="d-flex flex-column flex-md-row-reverse py-4">
+      <div class="mb-4 d-md-none d-flex">
+        <h3 class="text-white">
+          Você está a um passo de viver uma experiência TaskMe
+        </h3>
+      </div>
       <div class="col-12 card px-4 py-4 m-md-4 col-md-5">
-        <h1>Cadastro</h1>
         <form>
           <div class="row mb-2">
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-lg-6 mb-2">
               <label for="nome">Nome</label>
               <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome">
             </div>
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-lg-6">
               <label for="sobrenome">Sobrenome</label>
               <input class="form-control" type="text" name="sobrenome" id="sobrenome"
                 placeholder="Digite o seu sobrenome">
@@ -59,11 +63,11 @@
           </div>
 
           <div class="row mb-2">
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-lg-6 mb-2">
               <label for="rg">RG</label>
               <input class="form-control" type="text" name="rg" id="rg" placeholder="Digite seu Rg">
             </div>
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-lg-6">
               <label for="orgao-emissor">Orgão Emissor</label>
               <input class="form-control" type="text" name="orgao-emissor" id="orgao-emissor" placeholder="">
             </div>
@@ -79,6 +83,11 @@
           <div class="form-group mb-2">
             <label for="rua">Rua</label>
             <input class="form-control" type="text" name="rua" id="rua" placeholder="">
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="bairro">Bairro</label>
+            <input class="form-control" type="text" name="bairro" id="bairro" placeholder="">
           </div>
 
           <div class="row mb-2">
@@ -98,18 +107,18 @@
               <label for="complemento">Complemento</label>
               <input class="form-control" type="text" name="complemento" id="complemento">
             </div>
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-md-6 mb-2">
               <label for="numero">Número</label>
               <input class="form-control" type="text" name="numero" id="numero" placeholder="">
             </div>
           </div>
 
           <div class="row mb-2">
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-md-6 mb-2">
               <label for="email">Email</label>
               <input class="form-control" type="email" name="email" id="email" placeholder="name@example.com">
             </div>
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-md-6 mb-2">
               <label for="confirmaEmail">Confirmação do Email</label>
               <input class="form-control" type="text" name="confirmaEmail" id="confirmaEmail"
                 placeholder="name@example.com">
@@ -117,7 +126,7 @@
           </div>
 
           <div class="row mb-2">
-            <div class="form-group col-12 col-md-6">
+            <div class="form-group col-12 col-md-6 mb-2">
               <label for="senha">senha</label>
               <input class="form-control" type="password" name="senha" id="senha">
             </div>
@@ -126,11 +135,22 @@
               <input class="form-control" type="password" name="confirmaSenha" id="confirmaSenha">
             </div>
           </div>
-
+          <div class="d-flex justify-content-center mt-4"><button class="btn btn-primary px-4">cadastrar</button></div>
         </form>
       </div>
-      <div class="col-12 px-6 mb-4 m-md-4 col-md-5 d-flex justify-content-center align-items-center">
-        <img src="../img/Forms-amico.svg" alt="imagem de um homem olhando para pagina de cadastro com um gato ao lado">
+
+      <div class="col-12 px-6 mb-4 m-md-4 col-md-5 d-flex justify-content-start align-items-center flex-column">
+
+        <div class="mb-4 d-none d-md-flex">
+          <h3 class="text-white">
+            Você está a um passo de viver uma experiência TaskMe
+          </h3>
+        </div>
+
+        <div class="d-flex w-100 h-100 justify-content-center">
+          <img class="img-fluid" src="../img/Forms-amico.svg"
+            alt="imagem de um homem olhando para pagina de cadastro com um gato ao lado">
+        </div>
       </div>
     </div>
   </div>
