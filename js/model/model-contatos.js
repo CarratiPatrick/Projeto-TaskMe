@@ -16,6 +16,7 @@ class Anotacoes {
       } catch (e) {
         console.error(e);
       };
+    }
       verificaTipoDoEmail(email) {
         try {
           const mail = email.indexOf("@")
@@ -26,10 +27,6 @@ class Anotacoes {
           }
         } catch (e) {
           console.error(e);
-        }
-      };
+        };
+      }
     }
-    
-  
-   
-  

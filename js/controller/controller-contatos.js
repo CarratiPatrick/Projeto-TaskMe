@@ -1,15 +1,22 @@
-class Controlar {
+class Controller {
+  constructor(){
+    this.guardar = [];
+  }
     adcionaMensagem() {
-      const nome = 
-      const email =
-      const msg =
-      const assunto =
+      const nome =$("#nomeContato").val();
+      const email = $("#emailContato").val();
+      const assunto =$("#assuntoContato").val()
+      const msg = $("#msgContato").val()
   
-      const model = new Anotacoes(titulo, nota);
-      model.verificaNota(titulo, nota);
+      const anotacoes = new Anotacoes(nome,email,assunto,msg);
+      //anotacoes.verificaNota(titulo, nota);
     }
   }
+  const controller = new Controller();
+  $("#enviar").click((e) => {
+    e.preventDefault();
+    controller.adcionaMensagem();;
+  });
   
-  const controlar = new Controlar();
-  controlar.adcionaMensagem();
+  
   
