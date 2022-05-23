@@ -40,3 +40,55 @@ h1 {
 .carousel1 {
     width: 60%;
 }
+
+/* Seção 2 - Planos */
+
+.planos {
+    display: flex;
+    margin-left: 11em;
+    margin-top: 4em;
+}
+
+.plano1, .plano2, .plano3 {
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    background-color: white;
+    border-radius: 1.5em;
+    width: 25%;
+    margin: 0 1em;
+}
+
+h2 {
+    font-family: 'Mulish', sans-serif;
+    color: #232946;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.valor {
+    font-size: 1.15em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.medalha {
+    width: 40%;
+    margin: 5px auto;
+}
+
+li {
+    list-style-type: none
+}
+
+ul{
+    padding: 0.1px 10px;
+}
+
+span {
+    color: #388df5;
+}
