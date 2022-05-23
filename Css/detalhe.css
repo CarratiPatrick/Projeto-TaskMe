@@ -92,3 +92,49 @@ ul{
 span {
     color: #388df5;
 }
+
+/* Seção 3 - Perguntas Frequentes */
+
+h3 {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5em;
+}
+
+.perguntas-frequentes{
+    width: 70%;
+    margin: 2em auto;
+}
+
+.resposta{
+    background-color: white;
+    color: #232946;
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    text-align: justify;
+}
+
+.botao-pergunta, .botao-pergunta1 {
+    border-radius: 0px;
+    color: #232946;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    text-align: justify;
+    padding-left: 25px ;
+}
+
+.botao-pergunta {
+    background-color: rgb(211, 203, 203);
+}
+
+.botao-pergunta1 {
+    background-color: rgb(235, 223, 223);
+}
+
+p {
+    margin: 0px;
+}
