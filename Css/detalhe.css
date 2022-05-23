@@ -1,0 +1,42 @@
+/* Seção 1 - Saiba mais */
+
+h1 {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    margin: 1em 0 .5em 0;
+}
+
+.saibamais-logo {
+    width: 5%;
+    padding-bottom: 0.5em;
+}
+
+.saiba-mais{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.saiba-mais-parte1, .saiba-mais-parte2, .saiba-mais-parte3 {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.texto-saiba-mais {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    width: 40%;
+    margin: auto 2em;
+    font-size:1.1em;
+}
+
+.texto-saiba-mais2 {
+    color: #232946;
+    font-family: 'Mulish', sans-serif;
+    width: 40%;
+    margin: auto 2em;
+}
+
+.carousel1 {
+    width: 60%;
+}
