@@ -23,7 +23,7 @@ class Anotacoes {
           if (mail > -1) {
             return email;
           } else {
-            throw new Error("Tipo invalido");
+            throw new Error("email invalido");
           }
         } catch (e) {
           console.error(e);

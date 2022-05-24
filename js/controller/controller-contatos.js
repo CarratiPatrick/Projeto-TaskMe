@@ -1,6 +1,6 @@
 class Controller {
   constructor(){
-    this.guardar = [];
+    
   }
     adcionaMensagem() {
       const nome =$("#nomeContato").val();
