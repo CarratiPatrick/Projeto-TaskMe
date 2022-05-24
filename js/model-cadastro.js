@@ -17,15 +17,12 @@ class CadastroModel {
     this.confirmaSenha = ""
 
   }
-  informaErroCep(erro) {
 
-  }
-  
   validaCep() {
-  const cepVal =  /^[0-9]{8}$/;
-  return cepVal.test(this.cep)
+    const cepVal = /^[0-9]{8}$/;
+    return cepVal.test(this.cep)
   }
-  
+
   //validação email
   validaEmail() {
     const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
@@ -34,7 +31,37 @@ class CadastroModel {
   validaConfirmaEmail() {
     return this.email === this.confirmaEmail
   }
+
+  pesquisaEndereco() {
+    try {
+      this.validaCep()
+      $.ajax({
+        url: `https://viacep.com.br/ws/${this.cep}/json`,
+        type: 'GET',
+        success: (resposta) => {
+          this.rua = resposta.logradouro
+          this.bairro = resposta.bairro
+          this.cidade = resposta.localidade
+          this.uf = resposta.uf
+          cadastroController.callbackCep()
+        },
+        error: (erro) => {
+          this.informaErroCep('cep nao encontrado')
+        }
+      })
+    } catch (error) {
+      this.informaErroCep('cep invalido')
+    }
+
+  }
+
+
 }
+
+
+
+
+
 
 
 

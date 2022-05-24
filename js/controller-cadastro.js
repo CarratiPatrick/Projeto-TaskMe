@@ -18,8 +18,18 @@ class CadastroController {
     $("#cep").blur(() => {
       cadastroModel.cep = $("#cep").val()
       if (cadastroModel.validaCep()) {
-        
+        cadastroModel.pesquisaEndereco()
       }
+    })
+
+    
+  }
+  callbackCep() {
+    preencheFormCep({
+      rua: cadastroModel.rua,
+      bairro: cadastroModel.bairro,
+      cidade: cadastroModel.cidade,
+      uf: cadastroModel.uf,
     })
   }
 
