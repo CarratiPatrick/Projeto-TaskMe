@@ -22,8 +22,8 @@ class CadastroModel {
   }
   
   validaCep() {
-  
-    // valiada o cep e caso de ruim, da um throw
+  const cepVal =  /^[0-9]{8}$/;
+  return cepVal.test(this.cep)
   }
   
   //validação email
