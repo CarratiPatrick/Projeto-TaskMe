@@ -10,3 +10,19 @@ body {
   margin-top: -0.9px !important;
 
 }
+.login {
+  display: flex;
+  justify-content: center !important;
+  margin-top: 25px;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.img-left {
+  right: 150px;
+  width: 45%;
+  height: 100%;
+  background: url('./img/automatizacao-de-tarefas.jpg') center;
+  background-size: cover;
+}
