@@ -17,4 +17,25 @@ class CadastroModel {
     this.confirmaSenha = ""
 
   }
+  informaErroCep(erro) {
+
+  }
+  
+  validaCep() {
+  
+    // valiada o cep e caso de ruim, da um throw
+  }
+  
+  //validação email
+  validaEmail() {
+    const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+    return reg.test(this.email)
+  }
+  validaConfirmaEmail() {
+    return this.email === this.confirmaEmail
+  }
 }
+
+
+
+const cadastroModel = new CadastroModel()
