@@ -1,0 +1,12 @@
+body {
+  height: 100vh;
+  background: #232946 !important;
+}
+
+.card {
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 20px !important;
+  margin-top: -0.9px !important;
+
+}
