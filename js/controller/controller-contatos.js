@@ -10,12 +10,15 @@ class Controller {
   
       const anotacoes = new Anotacoes(nome,email,assunto,msg);
       //anotacoes.verificaNota(titulo, nota);
+      mostrarSucessoEnvio()
     }
   }
   const controller = new Controller();
   $("#enviar").click((e) => {
     e.preventDefault();
     controller.adcionaMensagem();;
+    $('#formulario').hide()
+
   });
   
   
