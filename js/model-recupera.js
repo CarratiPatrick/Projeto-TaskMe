@@ -4,14 +4,19 @@ console.log("Entrei na model");
     }
 
     validacao(){
+        console.log("entrei na validação");
+      
         const email = $('#email').val()
 
         if (email.indexOf("@") > -1){
-            const view = new EmailView()
             console.log('email validou')
+          return "valido"
         } else{
-            const view = new EmailView()
             console.log("email invalido");
+            return "invalido"
         }
+    }
+    getValor(){
+        return this.valor
     }
 }

@@ -7,10 +7,18 @@ class EmailController {
     validaOEmail(){
           console.log("Vou validar o email");
     const model = new EmailModel();
-    model.validacao();
+    let valida = model.validacao();
+    console.log(valida);
 
-    // Passamos os dados para a view
+    
     const view = new EmailView();
+    if( valida == "valido"){
+        view.emailValido()
+    }else{
+        view.emailInvalido()
+    }
+
+
     
 }
 }
