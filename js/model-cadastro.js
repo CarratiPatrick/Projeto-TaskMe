@@ -85,6 +85,10 @@ class CadastroModel {
 
   }
 
+  validaForm(){
+    return this.validaNome() && this.validaSobrenome() && this.validaCep() && this.validaRg() && this.validaEmail() && this.validaConfirmaEmail() && this.validaSenha() && this.validaConfirmaSenha()
+  }
+
 
 }
 

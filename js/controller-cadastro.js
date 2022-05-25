@@ -66,9 +66,16 @@ class CadastroController {
         invalidarCampo("#rg")
       }
     })
-
-
+    $("#formCadastro").submit(evento => {
+      evento.preventDefault()
+      if (cadastroModel.validaForm()) {
+        console.log('vai pra sucesso');
+      } else {
+        console.log('foi nao');
+      }
+    })
   }
+
   callbackCep() {
     preencheFormCep({
       rua: cadastroModel.rua,
@@ -77,9 +84,6 @@ class CadastroController {
       uf: cadastroModel.uf,
     })
   }
-  
-
-  
 }
 
 
