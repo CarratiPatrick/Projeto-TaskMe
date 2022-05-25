@@ -1,77 +1,44 @@
 class CadastroController {
   constructor() {
     $("#email").blur(() => {
-      cadastroModel.email = $("#email").val()
-      if (cadastroModel.validaEmail()) {
-        validarCampo("#email")
-      } else {
-        invalidarCampo("#email")
-      }
+      this.validaEmail()
     })
 
     $("#confirmaEmail").blur(() => {
-      cadastroModel.confirmaEmail = $("#confirmaEmail").val()
-      if (cadastroModel.validaConfirmaEmail()) {
-        validarCampo("#confirmaEmail")
-      } else {
-        invalidarCampo("#confirmaEmail")
-      }
+      this.validaConfirmaEmail()
     })
     $("#cep").blur(() => {
-      cadastroModel.cep = $("#cep").val()
-      if (cadastroModel.validaCep()) {
-        validarCampo("#cep")
-        cadastroModel.pesquisaEndereco()
-      } else {
-        invalidarCampo("#cep")
-      }
+      this.validaCep()
     })
     $("#nome").blur(() => {
-      cadastroModel.nome = $("#nome").val()
-      if (cadastroModel.validaNome()) {
-        validarCampo("#nome")
-      } else {
-        invalidarCampo("#nome")
-      }
+      this.validaNome()
     })
     $("#sobrenome").blur(() => {
-      cadastroModel.sobrenome = $("#sobrenome").val()
-      if (cadastroModel.validaSobrenome()) {
-        validarCampo("#sobrenome")
-      } else {
-        invalidarCampo("#sobrenome")
-      }
+      this.validaSobrenome()
     })
     $("#senha").blur(() => {
-      cadastroModel.senha = $("#senha").val()
-      if (cadastroModel.validaSenha()) {
-        validarCampo("#senha")
-      } else {
-        invalidarCampo("#senha")
-      }
+      this.confirmaSenha()
     })
     $("#confirmaSenha").blur(() => {
-      cadastroModel.confirmaSenha = $("#confirmaSenha").val()
-      if (cadastroModel.validaConfirmaSenha()) {
-        validarCampo("#confirmaSenha")
-      } else {
-        invalidarCampo("#confirmaSenha")
-      }
+      this.validaConfirmaSenha()
     })
     $("#rg").blur(() => {
-      cadastroModel.rg = $("#rg").val()
-      if (cadastroModel.validaRg()) {
-        validarCampo("#rg")
-      } else {
-        invalidarCampo("#rg")
-      }
+      this.validaRG()
     })
+
     $("#formCadastro").submit(evento => {
       evento.preventDefault()
       if (cadastroModel.validaForm()) {
-        console.log('vai pra sucesso');
+        location.replace("./html/login.html")
       } else {
-        console.log('foi nao');
+        this.validaRG()
+        this.validaConfirmaSenha()
+        this.confirmaSenha()
+        this.validaSobrenome()
+        this.validaNome()
+        this.validaCep()
+        this.validaConfirmaEmail()
+        this.validaEmail()
       }
     })
   }
@@ -84,6 +51,80 @@ class CadastroController {
       uf: cadastroModel.uf,
     })
   }
+
+  validaRG() {
+    cadastroModel.rg = $("#rg").val()
+    if (cadastroModel.validaRg()) {
+      validarCampo("#rg")
+    } else {
+      invalidarCampo("#rg")
+    }
+  }
+  validaConfirmaSenha() {
+    cadastroModel.confirmaSenha = $("#confirmaSenha").val()
+    if (cadastroModel.validaConfirmaSenha()) {
+      validarCampo("#confirmaSenha")
+    } else {
+      invalidarCampo("#confirmaSenha")
+    }
+
+  }
+
+  confirmaSenha() {
+    cadastroModel.senha = $("#senha").val()
+    if (cadastroModel.validaSenha()) {
+      validarCampo("#senha")
+    } else {
+      invalidarCampo("#senha")
+    }
+  }
+
+  validaSobrenome() {
+    cadastroModel.sobrenome = $("#sobrenome").val()
+    if (cadastroModel.validaSobrenome()) {
+      validarCampo("#sobrenome")
+    } else {
+      invalidarCampo("#sobrenome")
+    }
+  }
+
+  validaNome() {
+    cadastroModel.nome = $("#nome").val()
+    if (cadastroModel.validaNome()) {
+      validarCampo("#nome")
+    } else {
+      invalidarCampo("#nome")
+    }
+
+  }
+  validaCep() {
+    cadastroModel.cep = $("#cep").val()
+    if (cadastroModel.validaCep()) {
+      validarCampo("#cep")
+      cadastroModel.pesquisaEndereco()
+    } else {
+      invalidarCampo("#cep")
+    }
+
+  }
+  validaConfirmaEmail() {
+    cadastroModel.confirmaEmail = $("#confirmaEmail").val()
+    if (cadastroModel.validaConfirmaEmail()) {
+      validarCampo("#confirmaEmail")
+    } else {
+      invalidarCampo("#confirmaEmail")
+    }
+  }
+
+  validaEmail() {
+    cadastroModel.email = $("#email").val()
+    if (cadastroModel.validaEmail()) {
+      validarCampo("#email")
+    } else {
+      invalidarCampo("#email")
+    }
+  }
+
 }
 
 
