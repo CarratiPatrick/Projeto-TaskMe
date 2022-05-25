@@ -6,6 +6,20 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(97, 95, 95);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #232946;
+    border-radius: 12px;
+    border: 2px solid rgb(97, 95, 95);
+}
+
 header {
     background-color: #fffffe;
 }
@@ -35,7 +49,6 @@ button {
     margin-right: 2em;
     border-bottom: 4px #b8cfec solid;
     border-left: 4px #b8cfec solid;
-    ;
     font-family: 'Mulish', sans-serif;
 }
 
