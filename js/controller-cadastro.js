@@ -58,6 +58,14 @@ class CadastroController {
         invalidarCampo("#confirmaSenha")
       }
     })
+    $("#rg").blur(() => {
+      cadastroModel.rg = $("#rg").val()
+      if (cadastroModel.validaRg()) {
+        validarCampo("#rg")
+      } else {
+        invalidarCampo("#rg")
+      }
+    })
 
 
   }
@@ -69,7 +77,9 @@ class CadastroController {
       uf: cadastroModel.uf,
     })
   }
+  
 
+  
 }
 
 
