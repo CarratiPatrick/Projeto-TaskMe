@@ -10,3 +10,15 @@ $("#btnLog").click((event)=>{
     location.replace("../Html/cadastro.html")
 
   })
+  $("#btnLogInd").click((event)=>{
+    event.preventDefault();
+    
+    location.replace("./Html/login.html")
+
+  })
+  $("#btnCadInd").click((event)=>{
+    event.preventDefault();
+    
+    location.replace("./Html/cadastro.html")
+
+  })
