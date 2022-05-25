@@ -29,7 +29,7 @@ class CadastroController {
     $("#formCadastro").submit(evento => {
       evento.preventDefault()
       if (cadastroModel.validaForm()) {
-        location.replace("./html/login.html")
+        location.replace("./login.html")
       } else {
         this.validaRG()
         this.validaConfirmaSenha()
