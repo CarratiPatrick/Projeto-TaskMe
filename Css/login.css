@@ -10,20 +10,28 @@ body {
   margin-top: -0.9px !important;
 }
 
+main{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  height: auto;
+
+}
 .login {
   display: flex;
   justify-content: center !important;
   margin-top: 25px;
-  width: 1500px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .img-left {
-  right: 150px;
+  right: auto;
   width: 45%;
   height: 100%;
-  background: url("../img/automatizacao-de-tarefas.jpg") center;
+  background: url("./img/automatizacao-de-tarefas.jpg") center;
   background-size: cover;
 }
 
@@ -45,7 +53,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.form_input {
+.card-body _input {
   position: relative;
 }
 
@@ -55,14 +63,14 @@ body {
 
 .ver {
   position: absolute;
-  right: 200%;
+  right: 100%;
   font-size: 17px;
   font-weight: 700;
   color: #232946;
   cursor: pointer;
 }
 
-.form_input input {
+.card-body _input input {
   width: 100%;
   height: 45px;
   padding-left: 40px;
@@ -75,29 +83,29 @@ body {
   background: transparent;
 }
 
-.form_input span {
+.card-body _input span {
   position: absolute;
   top: 10px;
   padding-left: 15px;
   color: #232946;
 }
 
-.form_input input ::placeholder {
+.card-body _input input ::placeholder {
   color: black;
   padding-left: 0px;
 }
 
-.form_input input:focus,
-.form_input input:valid {
+.card-body _input input:focus,
+.card-body _input input:valid {
   border: 3px solid #007bff;
   height: 50px;
 }
 
-.form_input input:focus::placeholder {
+.card-body _input input:focus::placeholder {
   color: #454b69;
 }
 
-.form-box button[type="submit"] {
+.card-body -box button[type="submit"] {
   margin-top: 10px;
   border: none;
   cursor: pointer;
@@ -110,10 +118,10 @@ body {
   transition: 0.5s;
   padding: 12px;
   justify-content: center;
-  width: 350px;
+  width: 100%;
 }
 
-form-box button[type="submit"]:hover {
+.card-body -box button[type="submit"]:hover {
   background: #0069d9;
 }
 
@@ -173,4 +181,30 @@ form-box button[type="submit"]:hover {
   border-bottom: 4px #b8cfec solid;
   border-left: 4px #b8cfec solid;
   font-family: 'Mulish', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .card-body  {
+    width: auto;
+    position: relative;
+  }
+  }
+  .sociais button {
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+    height: 40px;
+  }
+
+@media screen and (max-width: 425px) {
+  .card-body  {
+    width: auto;
+    position: relative;
+  }
+  .sociais button {
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+    height: 40px;
+  }
 }
