@@ -13,10 +13,10 @@ class Controller {
     //  const mostraContato = new ContatoView()
     }
     limparMensagem(){
-      const nome =$("#nomeContato").empty();
-      const email = $("#emailContato").empty();
-      const assunto =$("#assuntoContato").empty()
-      const msg = $("#msgContato").empty()
+      const nome =$("#nomeContato").val("");
+      const email = $("#emailContato").val("");
+      const assunto =$("#assuntoContato").val("")
+      const msg = $("#msgContato").val("")
     }
   }
 
