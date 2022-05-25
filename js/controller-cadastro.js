@@ -42,6 +42,22 @@ class CadastroController {
         invalidarCampo("#sobrenome")
       }
     })
+    $("#senha").blur(() => {
+      cadastroModel.senha = $("#senha").val()
+      if (cadastroModel.validaSenha()) {
+        validarCampo("#senha")
+      } else {
+        invalidarCampo("#senha")
+      }
+    })
+    $("#confirmaSenha").blur(() => {
+      cadastroModel.confirmaSenha = $("#confirmaSenha").val()
+      if (cadastroModel.validaConfirmaSenha()) {
+        validarCampo("#confirmaSenha")
+      } else {
+        invalidarCampo("#confirmaSenha")
+      }
+    })
 
 
   }

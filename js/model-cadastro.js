@@ -45,6 +45,19 @@ class CadastroModel {
     return this.sobrenome.length > 3
   }
 
+  validaSenha() {
+    return this.senha.length > 7
+  }
+  validaConfirmaSenha() {
+    if (!this.validaSenha()) {
+      return false
+    }
+    if (!this.senha.length) return false
+
+    return this.senha === this.confirmaSenha
+    
+  }
+
   pesquisaEndereco() {
     try {
       this.validaCep()
