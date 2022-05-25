@@ -159,6 +159,18 @@ form-box button[type="submit"]:hover {
   text-align: center;
 }
 
-footer {
+/* footer {
   position: fixed;
+} */
+.buttonLogin {
+  border: 2px #b8cfec solid;
+  border-radius: 15px;
+  color: rgb(85, 79, 79);
+  font-weight: 700;
+  font-size: 1.04em;
+  padding: 0.2em .8em;
+  margin-right: 2em;
+  border-bottom: 4px #b8cfec solid;
+  border-left: 4px #b8cfec solid;
+  font-family: 'Mulish', sans-serif;
 }
