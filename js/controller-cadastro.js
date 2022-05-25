@@ -3,16 +3,18 @@ class CadastroController {
     $("#email").blur(() => {
       cadastroModel.email = $("#email").val()
       if (cadastroModel.validaEmail()) {
-        // chamar funcao na view que mostra email verde
+        validarCampo("#email")
       } else {
-        //chamar funcao na view que mostra o email vermelho com erro
+        invalidarCampo("#email")
       }
     })
 
     $("#confirmaEmail").blur(() => {
       cadastroModel.confirmaEmail = $("#confirmaEmail").val()
       if (cadastroModel.validaConfirmaEmail()) {
-
+        validarCampo("#confirmaEmail")
+      } else{
+        invalidarCampo("#confirmaEmail")
       }
     })
     $("#cep").blur(() => {

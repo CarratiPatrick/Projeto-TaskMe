@@ -32,6 +32,10 @@ class CadastroModel {
     return this.email === this.confirmaEmail
   }
 
+  validaNome() {
+    
+  }
+
   pesquisaEndereco() {
     try {
       this.validaCep()

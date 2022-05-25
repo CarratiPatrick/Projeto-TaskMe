@@ -14,5 +14,15 @@ const preencheFormCep = (endereco) => {
   $("#uf").val(endereco.uf);
 }
 
+const validarCampo = (idCampo) => {
+  $(idCampo).removeClass("is-invalid")
+  $(idCampo).addClass("is-valid")
+}
+
+const invalidarCampo = (idCampo) => {
+  $(idCampo).removeClass("is-valid")
+  $(idCampo).addClass("is-invalid")
+}
+
 
 
