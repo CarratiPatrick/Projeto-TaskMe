@@ -1,0 +1,13 @@
+.estiloCard{
+    max-width: 18rem;
+}
+.estiloGrid{
+    row-gap: 0;
+}
+
+.corBtn{
+   background-color:  #232946;
+}
+.corTxt{
+    color: #fffffe ;
+}
