@@ -22,6 +22,10 @@ class CadastroModel {
     const cepVal = /^[0-9]{8}$/;
     return cepVal.test(this.cep)
   }
+  validaRg() {
+    const RgVal = /^[0-9]{9}$/;
+    return RgVal.test(this.rg)
+  }
 
   //validação email
   validaEmail() {
