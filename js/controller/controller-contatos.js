@@ -10,16 +10,33 @@ class Controller {
   
       const anotacoes = new Anotacoes(nome,email,assunto,msg);
       //anotacoes.verificaNota(titulo, nota);
-      mostrarSucessoEnvio()
+    //  const mostraContato = new ContatoView()
+    }
+    limparMensagem(){
+      const nome =$("#nomeContato").empty();
+      const email = $("#emailContato").empty();
+      const assunto =$("#assuntoContato").empty()
+      const msg = $("#msgContato").empty()
     }
   }
+
   const controller = new Controller();
+  const mostraContato = new ContatoView()
+  
   $("#enviar").click((e) => {
     e.preventDefault();
-    controller.adcionaMensagem();;
-    $('#formulario').hide()
+    controller.adcionaMensagem();
+    $('#formulario').hide();
+    mostraContato.mostrarSucessoEnvio()
 
   });
+  $("#btnReenviar").click((e)=>{
+    e.preventDefault();
+    controller.limparMensagem()
+    $('#formulario').show();
+    $( "#reenviar" ).addClass( "d-none" );
+
+  })
   
   
   
