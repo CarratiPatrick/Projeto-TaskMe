@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+  <title>TaskMe | cadastro</title>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img class="navbar-logo" src="../img/taskme-logo.png" alt="Logo da TaskMe">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Saiba Mais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+        <button class="botao-login">Login</button>
+        <button class="botao-cadastro">Cadastre-se</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Formulário -->
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row-reverse py-4">
+      <div class="mb-4 d-md-none d-flex">
+        <h3 class="text-white">
+          Você está a um passo de viver uma experiência TaskMe
+        </h3>
+      </div>
+      <div class="col-12 card px-4 py-4 m-md-4 col-md-5">
+        <form>
+          <div class="row mb-2">
+            <div class="form-group col-12 col-lg-6 mb-2">
+              <label for="nome">Nome</label>
+              <input class="form-control" type="text" name="nome" id="nome">
+            </div>
+            <div class="form-group col-12 col-lg-6">
+              <label for="sobrenome">Sobrenome</label>
+              <input class="form-control" type="text" name="sobrenome" id="sobrenome">
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="form-group col-12 col-lg-6 mb-2">
+              <label for="rg">RG</label>
+              <input class="form-control" type="text" name="rg" id="rg">
+            </div>
+            <div class="form-group col-12 col-lg-6">
+              <label for="orgao-emissor">Orgão Emissor</label>
+              <input class="form-control" type="text" name="orgao-emissor" id="orgaoEmissor" >
+            </div>
+          </div>
+
+          <div class="form-group mb-2">
+            <div class="col-12 col-md-6">
+              <label for="cep">Cep</label>
+              <input class="form-control" type="text" name="cep" id="cep">
+            </div>
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="rua">Rua</label>
+            <input class="form-control" type="text" name="rua" id="rua">
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="bairro">Bairro</label>
+            <input class="form-control" type="text" name="bairro" id="bairro" >
+          </div>
+
+          <div class="row mb-2">
+            <div class="form-group col-12 col-md-6">
+              <label for="cidade">Cidade</label>
+              <input class="form-control" type="text" name="cidade" id="cidade">
+            </div>
+
+            <div class="form-group col-12 col-md-6 mb-2">
+              <label for="uf">UF</label>
+              <input class="form-control" type="text" name="uf" id="uf">
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="form-group col-12 col-md-6">
+              <label for="complemento">Complemento</label>
+              <input class="form-control" type="text" name="complemento" id="complemento">
+            </div>
+            <div class="form-group col-12 col-md-6 mb-2">
+              <label for="numero">Número</label>
+              <input class="form-control" type="text" name="numero" id="numero">
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="form-group col-12 col-md-6 mb-2">
+              <label for="email">Email</label>
+              <input class="form-control" type="email" name="email" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group col-12 col-md-6 mb-2">
+              <label for="confirmaEmail">Confirmação do Email</label>
+              <input class="form-control" type="text" name="confirmaEmail" id="confirmaEmail"
+                placeholder="name@example.com">
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="form-group col-12 col-md-6 mb-2">
+              <label for="senha">senha</label>
+              <input class="form-control" type="password" name="senha" id="senha">
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <label for="confirmaSenha"></label>
+              <input class="form-control" type="password" name="confirmaSenha" id="confirmaSenha">
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4"><button class="btn btn-primary px-4">cadastrar</button></div>
+        </form>
+      </div>
+
+      <div class="col-12 px-6 mb-4 m-md-4 col-md-5 d-flex justify-content-start align-items-center flex-column">
+
+        <div class="mb-4 d-none d-md-flex">
+          <h3 class="text-white">
+            Você está a um passo de viver uma experiência TaskMe
+          </h3>
+        </div>
+
+        <div class="d-flex w-100 h-100 justify-content-center">
+          <img class="img-fluid" src="../img/Forms-amico.svg"
+            alt="imagem de um homem olhando para pagina de cadastro com um gato ao lado">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <section class="rodape">
+      <div class="footer-logos">
+        <img class="logo-taskme" src="../img/taskme-logo.png" alt="logo do produto taskme">
+        <img class="logo-wave" src="../img/wave-logo.png" alt="logo da empresa Wave">
+      </div>
+    </section>
+    <section class="copyright">
+      <p class="copyright-texto"> © 2022 TaskMe. Todos os direitos reservados | Wave Corporation S/A. <br>
+        Todos os planos e condições deste site são meramente fictícios, projeto desenvolvido para fins
+        acadêmicos.</p>
+    </section>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+<script src="../js/model-cadastro.js"></script>
+<script src="../js/view-cadastro.js"></script>
+<script src="../js/controller-cadastro.js"></script>
+
+</body>
+
+</html>
