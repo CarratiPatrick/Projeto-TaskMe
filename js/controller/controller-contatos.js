@@ -23,15 +23,15 @@ class Controller {
   const controller = new Controller();
   const mostraContato = new ContatoView()
   
-  $("#enviar").click((e) => {
-    e.preventDefault();
+  $("#enviar").click((event) => {
+    event.preventDefault();
     controller.adcionaMensagem();
     $('#formulario').hide();
     mostraContato.mostrarSucessoEnvio()
 
   });
-  $("#btnReenviar").click((e)=>{
-    e.preventDefault();
+  $("#btnReenviar").click((event)=>{
+    event.preventDefault();
     controller.limparMensagem()
     $('#formulario').show();
     $( "#reenviar" ).addClass( "d-none" );
