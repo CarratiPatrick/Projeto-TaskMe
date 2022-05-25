@@ -22,10 +22,10 @@ const icon = document.querySelector("#eyeSvg");
 icon.addEventListener("click", function () {
   container.classList.toggle("visible");
   if (container.classList.contains("visible")) {
-    icon.src = "./img/fechado.svg";
+    icon.src = "../img/fechado.svg";
     senha.type = "text";
   } else {
-    icon.src = "./img/aberto.svg";
+    icon.src = "../img/aberto.svg";
     senha.type = "password";
   }
 });
