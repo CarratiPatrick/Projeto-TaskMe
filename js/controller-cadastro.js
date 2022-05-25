@@ -13,18 +13,37 @@ class CadastroController {
       cadastroModel.confirmaEmail = $("#confirmaEmail").val()
       if (cadastroModel.validaConfirmaEmail()) {
         validarCampo("#confirmaEmail")
-      } else{
+      } else {
         invalidarCampo("#confirmaEmail")
       }
     })
     $("#cep").blur(() => {
       cadastroModel.cep = $("#cep").val()
       if (cadastroModel.validaCep()) {
+        validarCampo("#cep")
         cadastroModel.pesquisaEndereco()
+      } else {
+        invalidarCampo("#cep")
+      }
+    })
+    $("#nome").blur(() => {
+      cadastroModel.nome = $("#nome").val()
+      if (cadastroModel.validaNome()) {
+        validarCampo("#nome")
+      } else {
+        invalidarCampo("#nome")
+      }
+    })
+    $("#sobrenome").blur(() => {
+      cadastroModel.sobrenome = $("#sobrenome").val()
+      if (cadastroModel.validaSobrenome()) {
+        validarCampo("#sobrenome")
+      } else {
+        invalidarCampo("#sobrenome")
       }
     })
 
-    
+
   }
   callbackCep() {
     preencheFormCep({
