@@ -22,6 +22,10 @@ class CadastroModel {
     const cepVal = /^[0-9]{8}$/;
     return cepVal.test(this.cep)
   }
+  validaRg() {
+    const RgVal = /^[0-9]{9}$/;
+    return RgVal.test(this.rg)
+  }
 
   //validação email
   validaEmail() {
@@ -29,7 +33,33 @@ class CadastroModel {
     return reg.test(this.email)
   }
   validaConfirmaEmail() {
+    if (!this.validaEmail()) {
+      return false
+    }
+    if (!this.email.length) return false
+
     return this.email === this.confirmaEmail
+  }
+
+  validaNome() {
+    return this.nome.length > 3
+  }
+
+  validaSobrenome() {
+    return this.sobrenome.length > 3
+  }
+
+  validaSenha() {
+    return this.senha.length > 7
+  }
+  validaConfirmaSenha() {
+    if (!this.validaSenha()) {
+      return false
+    }
+    if (!this.senha.length) return false
+
+    return this.senha === this.confirmaSenha
+    
   }
 
   pesquisaEndereco() {
