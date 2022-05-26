@@ -1,210 +1,212 @@
 body {
-  height: 100vh;
-  background: #232946 !important;
-}
-
-.card {
-  overflow: hidden;
-  border: 0 !important;
-  border-radius: 20px !important;
-  margin-top: -0.9px !important;
-}
-
-main{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: auto;
-  height: auto;
-
-}
-.login {
-  display: flex;
-  justify-content: center !important;
-  margin-top: 25px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img-left {
-  right: auto;
-  width: 45%;
-  height: 100%;
-  background: url("../img/automatizacao-de-tarefas.jpg") center;
-  background-size: cover;
-}
-
-.card-body {
-  padding: 2rem;
-}
-
-.custom-control-input {
-  height: 20px;
-  width: 25px;
-}
-
-.custom-control-label {
-  font-size: 18px;
-  text-align: left;
-}
-
-.title {
-  margin-bottom: 2rem;
-}
-
-.card-body _input {
-  position: relative;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.ver {
-  position: absolute;
-  right: 100%;
-  font-size: 17px;
-  font-weight: 700;
-  color: #232946;
-  cursor: pointer;
-}
-
-.card-body _input input {
-  width: 100%;
-  height: 45px;
-  padding-left: 40px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  box-shadow: none;
-  border: 1px solid #00000020;
-  border-radius: 50px;
-  outline: none;
-  background: transparent;
-}
-
-.card-body _input span {
-  position: absolute;
-  top: 10px;
-  padding-left: 15px;
-  color: #232946;
-}
-
-.card-body _input input ::placeholder {
-  color: black;
-  padding-left: 0px;
-}
-
-.card-body _input input:focus,
-.card-body _input input:valid {
-  border: 3px solid #007bff;
-  height: 50px;
-}
-
-.card-body _input input:focus::placeholder {
-  color: #454b69;
-}
-
-.card-body -box button[type="submit"] {
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  transition: 0.5s;
-  padding: 12px;
-  justify-content: center;
-  width: 100%;
-}
-
-.card-body -box button[type="submit"]:hover {
-  background: #0069d9;
-}
-
-.forget-link,
-.register-link {
-  color: #007bff;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 200px;
-}
-
-.forget-link:hover,
-.register-link:hover {
-  color: #0069d9;
-  text-decoration: none;
-  font-weight: bold;
-}
-.text-center {
-  font-weight: bold;
-  color: #232946;
-}
-
-.sociais {
-  display: flex !important;
-  width: 25% !important;
-  border-radius: 5px !important;
-  margin: 25px !important;
-}
-
-.sociais button {
-  width: 60px;
-  height: 50px;
-  margin-left: 120px;
-  background-image: linear-gradient(45deg, #232946, #0836c2);
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.sociais button i {
-  font-size: 25px;
-  color: azure;
-  text-align: center;
-}
-
-/* footer {
-  position: fixed;
-} */
-.buttonLogin {
-  border: 2px #b8cfec solid;
-  border-radius: 15px;
-  color: rgb(85, 79, 79);
-  font-weight: 700;
-  font-size: 1.04em;
-  padding: 0.2em .8em;
-  margin-right: 2em;
-  border-bottom: 4px #b8cfec solid;
-  border-left: 4px #b8cfec solid;
-  font-family: 'Mulish', sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-  .card-body  {
+    height: 100vh;
+    background: #232946 !important;
+  }
+  
+  .card {
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px !important;
+    margin-top: -0.9px !important;
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    position: relative;
     width: auto;
+    height: auto;
+  
+  }
+  .login {
+    display: flex;
+    justify-content: center !important;
+    margin-top: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .img-left {
+    right: auto;
+    width: 45%;
+    height: 100%;
+    background: url("../img/automatizacao-de-tarefas.jpg") center;
+    background-size: cover;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .custom-control-input {
+    height: 20px;
+    width: 25px;
+  }
+  
+  .custom-control-label {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .title {
+    margin-bottom: 2rem;
+  }
+  
+  .form_input {
     position: relative;
   }
+  
+  .text-right {
+    text-align: right;
   }
+  
+  .ver {
+    margin-right: 10px;
+    position: absolute;
+    right: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    color: #232946;
+    cursor: pointer;
+  }
+  
+  .form_input input {
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+  }
+  
+  .form_input span {
+    position: absolute;
+    top: 10px;
+    padding-left: 15px;
+    color: #232946;
+  }
+  
+  .form_input input ::placeholder {
+    color: black;
+    padding-left: 0px;
+  }
+  
+  .form_input input:focus,
+  .form_input input:valid {
+    border: 3px solid #007bff;
+    height: 50px;
+  }
+  
+  .form_input input:focus::placeholder {
+    color: #454b69;
+  }
+  
+  .form-box button[type="submit"] {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    padding: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .form-box  button[type="submit"]:hover {
+    background: #0069d9;
+  }
+  
+  .forget-link,
+  .register-link {
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  
+  .forget-link:hover,
+  .register-link:hover {
+    color: #0069d9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .text-center {
+    font-weight: bold;
+    color: #232946;
+  }
+  
+  .sociais {
+    display: flex !important;
+    width: 25% !important;
+    border-radius: 5px !important;
+    margin: 25px !important;
+  }
+  
   .sociais button {
-    display: flex;
-    justify-content: space-around;
     width: 60px;
-    height: 40px;
+    height: 50px;
+    margin-left: 120px;
+    background-image: linear-gradient(45deg, #232946, #0836c2);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
   }
-
-@media screen and (max-width: 425px) {
-  .card-body  {
-    width: auto;
-    position: relative;
+  
+  .sociais button i {
+    font-size: 25px;
+    color: azure;
+    text-align: center;
   }
-  .sociais button {
-    display: flex;
-    justify-content: space-around;
-    width: 60px;
-    height: 40px;
+  
+  /* footer {
+    position: fixed;
+  } */
+  .buttonLogin {
+    border: 2px #b8cfec solid;
+    border-radius: 15px;
+    color: rgb(85, 79, 79);
+    font-weight: 700;
+    font-size: 1.04em;
+    padding: 0.2em .8em;
+    margin-right: 2em;
+    border-bottom: 4px #b8cfec solid;
+    border-left: 4px #b8cfec solid;
+    font-family: 'Mulish', sans-serif;
   }
-}
+  
+  @media screen and (max-width: 768px) {
+    .card-body  {
+      width: auto;
+      position: relative;
+    }
+    }
+    .sociais button {
+      display: flex;
+      justify-content: space-around;
+      width: 60px;
+      height: 40px;
+    }
+  
+  @media screen and (max-width: 425px) {
+    .card-body  {
+      width: auto;
+      position: relative;
+    }
+    .sociais button {
+      display: flex;
+      justify-content: space-around;
+      width: 60px;
+      height: 40px;
+    }
+  }
+ 
