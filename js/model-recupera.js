@@ -4,7 +4,7 @@ class EmailModel {
 
         const email = $('#email').val()
 
-        if (email.indexOf("@") > -1) {
+        if (email.indexOf("@") > -1 && email.indexOf(".") > -1) {
             return "valido"
 
         } else {
